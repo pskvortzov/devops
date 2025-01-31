@@ -11,6 +11,8 @@ permissions:
 jobs:
   no-plans-to-merge:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == false
+
     steps:
       - name: Create a Comment on a PR
         uses: actions/github-script@v7
