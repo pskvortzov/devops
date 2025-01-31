@@ -10,14 +10,16 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index() {
+    public function index()
+    {
         return [1];
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create() {
+    public function create()
+    {
         //
     }
 
