@@ -18,21 +18,24 @@ class UserController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create() {
+    public function create()
+    {
         return [2];
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
         return [3];
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user) {
+    public function show(User $user)
+    {
         return [4];
     }
 
