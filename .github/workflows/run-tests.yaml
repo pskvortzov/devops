@@ -13,6 +13,11 @@ jobs:
         ports:
           - 6379:6379
 
+      mysql:
+        image: mysql:8.0
+        ports:
+          - 3306:3306
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4.1.7
