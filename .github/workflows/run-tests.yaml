@@ -18,9 +18,8 @@ jobs:
         ports:
           - 3306:3306
         env:
-          DB_DATABASE: devops
+          MYSQL_DATABASE: devops
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
-
 
     steps:
       - name: Checkout Code
