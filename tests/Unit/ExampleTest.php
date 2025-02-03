@@ -10,7 +10,7 @@ test('that false is false', function () {
     expect(false)->toBeFalse();
 });
 
-test('that db is working', function() {
+test('that db is working', function () {
     User::factory(5)->create();
 
     $users = User::all();
