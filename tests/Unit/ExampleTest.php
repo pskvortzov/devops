@@ -16,4 +16,5 @@ test('that db is working', function() {
     $users = User::all();
 
     expect($users->count())->toEqual(5);
+
 });
