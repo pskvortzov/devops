@@ -17,11 +17,10 @@ runs:
   steps:
     - name: Get PHP Cache Extensions Hash
       id: get-cache-hash
-      with:
       run: echo hash=$(echo $PHP_EXTENSIONS | sed "s/, */\n/g" | sort | uniq | md5sum | awk '{ print $1 }') >> $GITHUB_OUTPUT
       shell: bash
       env:
-        PHP_EXTENSIONS: ${{ input.php-extensions }}
+        PHP_EXTENSIONS: ${{ inputs.php-extensions }}
 
     - name: Setup cache environment
       id: extcache
