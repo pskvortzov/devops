@@ -18,4 +18,9 @@ class UserController extends Controller
     {
         return User::first();
     }
+
+    public function edit()
+    {
+        return '';
+    }
 }
