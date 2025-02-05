@@ -14,8 +14,13 @@ class UserController extends Controller
         return User::lazy();
     }
 
-    public function show()
+    public function show(User $user)
     {
-        return User::first();
+        return User::find($user->id)->firstOrFail();
+    }
+
+    public function edit()
+    {
+        return '';
     }
 }
